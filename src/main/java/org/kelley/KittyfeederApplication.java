@@ -9,6 +9,6 @@ public class KittyfeederApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(KittyfeederApplication.class, args);
-		
+
 	}
 }
