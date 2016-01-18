@@ -34,6 +34,11 @@ public class RootController {
         return "index";
     }
 
+    @RequestMapping(path = "/feedSuccess", method = RequestMethod.GET)
+    String feedSuccess() {
+        return "feedSuccess";
+    }
+
     @RequestMapping(path = "/", method = RequestMethod.POST)
     String processKittyFeedRequest() {
 
@@ -61,7 +66,7 @@ public class RootController {
         }
 
 
-        return "redirect:/";
+        return "redirect:/feedSuccess";
     }
 }
 
